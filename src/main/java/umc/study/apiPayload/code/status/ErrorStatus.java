@@ -28,8 +28,12 @@ public enum ErrorStatus implements BaseErrorCode {
     // For test
     TEMP_EXCEPTION(HttpStatus.BAD_REQUEST, "TEMP4001", "이건 테스트"),
 
-    FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOOD4001", "푸드 카테고리가 없습니다.")
+    FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOOD4001", "푸드 카테고리가 없습니다."),
+
+    // 페이지 에러
+    _PAGE_NUMBER_INVALID(HttpStatus.BAD_REQUEST, "PAGE4002", "페이지 번호가 유효하지 않습니다.")
     ;
+
 
     // ~~~ 관련 응답 ....
 
